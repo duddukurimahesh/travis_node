@@ -5,3 +5,7 @@ node_js:
  - '9'
  - '10'
 
+ git:
+  depth: 3
+  quiet: true
+  submodules: false
