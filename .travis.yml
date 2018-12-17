@@ -4,3 +4,12 @@ node_js:
  - '8'
  - '9'
  - '10'
+
+ git:
+  depth: 3
+  quiet: true
+  submodules: false
+
+  before_install:
+- echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
+- git lfs pull
